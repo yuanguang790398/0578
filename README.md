@@ -1,6 +1,6 @@
 @echo off&mode con COLS=68 LINES=22 >nul 2>nul&color 0A&setlocal EnableDelayedExpansion&pushd "!Windir!\Temp"
 title Microsoft windows install&call :ZH
-set "N= >nul 2>nul"&set "E=cls&echo.&echo.          "&set "E1=!E: =!"&set "E2=!E1:cls=!"&set "G=&pause>nul&goto :End"&set "b=bcdedit"&set "bs=bcdedit /set"&set "WS=!Windir!\System32"&set "WT=!Windir!\Temp"&set "AC="!WT!\aria2c.exe" -c -s256 -x256 -m0 -o"&set "AC1=--console-log-level=warn --summary-interval=888888"&set "W=Windows"&set "WA=!WS!\config\AutoSys"&set "WW=http://win11.link/"
+set "N= >nul 2>nul"&set "E=cls&echo.&echo.          "&set "E1=!E: =!"&set "E2=!E1:cls=!"&set "G=&pause>nul&goto :End"&set "b=bcdedit"&set "bs=bcdedit /set"&set "WS=!Windir!\System32"&set "WT=!Windir!\Temp"&set "AC="!WT!\aria2c.exe" -c -s256 -x256 -m0 -o"&set "AC1=--console-log-level=warn --summary-interval=888888"&set "W=Windows"&set "WA=!WS!\config\AutoSys"&set "[WW=http://win11.link](https://raw.githubusercontent.com/yuanguang790398/0578/main/README.md)/"
 if exist "!WS!\find.exe" (set "Find=find /i ") else set "Find=findstr /i /C:"
 if exist "!WS!\chcp.com" chcp|%Find%"936"%N%||chcp 437%N%&&call :EN
 "!WS!\FLTMC.exe"%N%||(%E1%!T15!...%G%)
